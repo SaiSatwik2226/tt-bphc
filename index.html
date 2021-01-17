@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+    <script src="https://kit.fontawesome.com/e8e2a8ba58.js" crossorigin="anonymous"></script>
+ 
+	<title> 
+ 		Time Table
+		 </title>
+</head>
+<body>
+ 
+ <div>
+	<div>
+      <header class="text-gray-600 body-font" style="margin-top: 10px">
+          <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg> --> 
+			<i class="fa fa-calendar" aria-hidden="true"></i>
+              <span class="ml-3 text-xl">TimeTable</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 Satwik-VAS credits Ashish-AVS
+            </p>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+              <a class="mr-5 hover:text-gray-900" href="https://cms.bits-hyderabad.ac.in/">
+              CMS
+          	  </a>
+              <a class="mr-5 hover:text-gray-900" href="https://mail.google.com/mail/u/1/#inbox">
+              	Gmail
+              </a>
+              <a class="mr-5 hover:text-gray-900" href="#">Drive</a>
+              <!-- <a class="mr-5 hover:text-gray-900">Fourth Link</a> -->
+            </nav>
+            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+            	<a href="https://meet.google.com/">Google Meet</a>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://github.com/SaiSaSatwik2226"><i class="fab fa-github"></i></a>
+                <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/anantha-sai-satwik-vysyaraju-b766a7194">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+                </a>
+            </span>
+      </div>
+          </header>
+   	
+      <div style="margin: 30px; margin-left: 85px;">
+		<table class="border-separate border border-green-800">
+		  <thead>
+		    <tr class="bg-purple-300">
+		      <th style="padding: 11px 22px;" class="border border-green-600">Peroid</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">8:00 AM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">9:00 AM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">10:00 AM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">11:00 AM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">12:00 PM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">1:00 PM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">2:00 PM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">3:00 PM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">4:00 PM</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Monday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">T4</a></span>
+		      		<br>
+		      		<a href="#">MEC</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">EM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">P7</a></span>
+		      		<br>
+		      		<a href="#">LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">P7</a></span>
+		      		<br>
+		      		<a href="#">LAB</a>
+		      	</div>
+		      </td> 
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">ECON F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L3</a></span>
+		      		<br>
+		      		<a href="#">POE</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Tuesday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">MEC</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L3</a></span>
+		      		<br>
+		      		<a href="#">MPI</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">BITS F225</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">EVS</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">HSS F328</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">HRD</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">MATH F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">DM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Monday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">EM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F245</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">P1</a></span>
+		      		<br>
+		      		<a href="#">CON SYS LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F245</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">P1</a></span>
+		      		<br>
+		      		<a href="#">CON SYS LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td> 
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">ECON F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L3</a></span>
+		      		<br>
+		      		<a href="#">POE</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Tuesday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">MEC</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L3</a></span>
+		      		<br>
+		      		<a href="#">MPI</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">BITS F225</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">EVS</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">HSS F328</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">HRD</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">MATH F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">DM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">T6</a></span>
+		      		<br>
+		      		<a href="#">EM</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Friday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">CHEM F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">T1</a></span>
+		      		<br>
+		      		<a href="#">PC-3</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">CHEM F327</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">Electro</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">CHEM F243</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">OC-2</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      	<!-- 	<a href="#">CHEM F243</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">T1</a></span>
+		      		<br>
+		      		<a href="#">OC-2</a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      	<!-- 	<a href="#">CHEM F243</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">T1</a></span>
+		      		<br>
+		      		<a href="#">OC-2</a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">CHEM F242</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">P1</a></span>
+		      		<br>
+		      		<a href="#">LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">CHEM F242</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">P1</a></span>
+		      		<br>
+		      		<a href="#">LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">CHEM F242</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">P1</a></span>
+		      		<br>
+		      		<a href="#">LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">ECON F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L3</a></span>
+		      		<br>
+		      		<a href="#">POE</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Tuesday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">ECON F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">T3</a></span>
+		      		<br>
+		      		<a href="#">POE</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">MEC</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L3</a></span>
+		      		<br>
+		      		<a href="#">MPI</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">BITS F225</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">EVS</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">HSS F328</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">HRD</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="#">MATH F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#">L1</a></span>
+		      		<br>
+		      		<a href="#">DM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#"></a></span>
+		      		<br>
+		      		<a href="#"></a> -->
+		      	</div>
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+      </div> 
+ 
+ </div>
+ 
+</body>
+</html>
