@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+    <script src="https://kit.fontawesome.com/e8e2a8ba58.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="timetable1.png">
+	<title> 
+ 		Time Table
+		 </title>
+</head>
+<body>
+ 
+ <div>
+	<div>
+      <header class="text-gray-600 body-font" style="margin-top: 10px">
+          <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg> --> 
+			<i class="fa fa-calendar" aria-hidden="true"></i>
+              <span class="ml-3 text-xl">TimeTable</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 Satwik-VAS credits Ashish-AVS
+            </p>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+			<!--<a class="mr-5 hover:text-gray-900" href="#">
+               <div class="ml-3 text-xl" style="text-align: center;" id="time">2:11:30</div>
+          	  </a>-->
+              <a class="mr-5 hover:text-gray-900" href="https://cms.bits-hyderabad.ac.in/" target="_blank" rel="noopener noreferrer">
+              CMS
+          	  </a>
+              <a class="mr-5 hover:text-gray-900" href="https://mail.google.com/mail/u/1/inbox" target="_blank" rel="noopener noreferrer">
+              	Gmail
+              </a>
+              <a class="mr-5 hover:text-gray-900" href="https://drive.google.com/drive/folders/1u661TPHEeITaBZ8otRP-48Tc3YEgu7wZ?usp=sharing" target="_blank" rel="noopener noreferrer">Drive</a>
+              <!-- <a class="mr-5 hover:text-gray-900">Fourth Link</a> -->
+			  <a class="mr-5 hover:text-gray-900" href="https://meet.google.com/" target="_blank" rel="noopener noreferrer">Meet</a>
+			  <a class="mr-5 hover:text-gray-900" href="https://classroom.google.com/h/" target="_blank" rel="noopener noreferrer">Classroom</a>
+            </nav>
+
+			<!-- <button class="inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-400 rounded text-base mt-4 md:mt-0">
+            	<a href="/go">InstaJoin!</a>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button> -->
+			
+
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://github.com/SaiSatwik2226/tt-bphc" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/anantha-sai-satwik-vysyaraju-b766a7194" target="_blank" rel="noopener noreferrer">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+                </a>
+            </span>
+      </div>
+          </header>
+   	
+      <div style="margin: 00px; margin-left: 85px;">
+		<table class="border-separate border border-green-800">
+		  <thead>
+		    <tr class="bg-purple-300">
+		      <th style="padding: 11px 22px;" class="border border-green-600">Peroid</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">8:00 AM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">9:00 AM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">10:00 AM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">11:00 AM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">12:00 PM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">1:00 PM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">2:00 PM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">3:00 PM</th>
+		      <th style="padding: 11px 22px;" class="border border-green-600">4:00 PM</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Monday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/iro-ghhh-rqg" target="_blank" rel="noopener noreferrer">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">T4</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MEC</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/pry-eoaw-jmw" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<!--<div>
+		      		<a href="https://meet.google.com/cra-wsvx-ycf" target="_blank" rel="noopener noreferrer">CS F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">OOPS</a>
+		      	</div>-->
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/suq-mcbq-hea" target="_blank" rel="noopener noreferrer">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">P7</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MPI LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/dre-umac-pup">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">P7</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MPI LAB</a>
+		      	</div>
+		      </td> 
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/fvq-mpqj-owu" target="_blank" rel="noopener noreferrer">ECON F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">POE</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Tuesday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/ysd-ttun-wge" target="_blank" rel="noopener noreferrer">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MPI</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/utv-acnx-dws" target="_blank" rel="noopener noreferrer">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MEC</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/iph-yfsb-fyd" target="_blank" rel="noopener noreferrer">BITS F225</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EVS</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="http://meet.google.com/cov-fmta-dke" target="_blank" rel="noopener noreferrer">HSS F328</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">HRD</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/ihj-fycw-hes?hs=224" target="_blank" rel="noopener noreferrer">MATH F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">DM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/upz-jbkp-dxm" target="_blank" rel="noopener noreferrer">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">T2</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MEC</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Wednesday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/ugv-fudf-twp" target="_blank" rel="noopener noreferrer">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">T10</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MPI</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/pry-eoaw-jmw" target="_blank" rel="noopener noreferrer">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<!--<div>
+		      		<a href="https://meet.google.com/cra-wsvx-ycf" target="_blank" rel="noopener noreferrer">CS F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">OOPS</a>
+		      	</div>-->
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/lookup/fdzlpmurnh" target="_blank" rel="noopener noreferrer">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">P2</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EM LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/lookup/fdzlpmurnh" target="_blank" rel="noopener noreferrer">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px">P2<a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EM LAB</a>
+		      	</div>
+		      </td> 
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/fvq-mpqj-owu" target="_blank" rel="noopener noreferrer">ECON F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">POE</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Thursday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/ysd-ttun-wge" target="_blank" rel="noopener noreferrer">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MPI</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/utv-acnx-dws" target="_blank" rel="noopener noreferrer">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MEC</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/iph-yfsb-fyd" target="_blank" rel="noopener noreferrer">BITS F225</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EVS</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="http://meet.google.com/cov-fmta-dke" target="_blank" rel="noopener noreferrer">HSS F328</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">HRD</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/ihj-fycw-hes?hs=224" target="_blank" rel="noopener noreferrer">MATH F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">DM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/scr-hyqm-hxj" target="_blank" rel="noopener noreferrer">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">T6</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EM</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Friday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/pry-eoaw-jmw" target="_blank" rel="noopener noreferrer">EEE F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<!--<div>
+		      		<a href="https://meet.google.com/cra-wsvx-ycf" target="_blank" rel="noopener noreferrer">CS F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">OOPS</a>
+		      	</div>-->
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="http://meet.google.com/afh-bqcq-thk" target="_blank" rel="noopener noreferrer">EEE F245</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">P1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">CON SYS LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="http://meet.google.com/afh-bqcq-thk" target="_blank" rel="noopener noreferrer">EEE F245</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">P1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">CON SYS LAB</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td> 
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/fvq-mpqj-owu" target="_blank" rel="noopener noreferrer">ECON F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">POE</a>
+		      	</div>
+		      </td>
+		    </tr>
+		    <tr class="bg-blue-100">
+		      <td style="padding: 27px;" class="border border-green-600 bg-purple-300">Saturday</td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/eia-ktmv-fjj" target="_blank" rel="noopener noreferrer">ECON F211</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">T3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">POE</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/ysd-ttun-wge" target="_blank" rel="noopener noreferrer">EEE F241</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MPI</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/utv-acnx-dws" target="_blank" rel="noopener noreferrer">EEE F244</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L3</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">MEC</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/iph-yfsb-fyd" target="_blank" rel="noopener noreferrer">BITS F225</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">EVS</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="http://meet.google.com/cov-fmta-dke" target="_blank" rel="noopener noreferrer">HSS F328</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">HRD</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<a href="https://meet.google.com/ihj-fycw-hes?hs=224" target="_blank" rel="noopener noreferrer">MATH F213</a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer">L1</a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer">DM</a>
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		      <td style="padding: 11px 22px; text-align:center" class="border border-green-600">
+		      	<div>
+		      		<!-- <a href="#" target="_blank" rel="noopener noreferrer"></a>
+		      		<br>
+		      		<span style="padding-bottom: 2px"><a href="#" target="_blank" rel="noopener noreferrer"></a></span>
+		      		<br>
+		      		<a href="#" target="_blank" rel="noopener noreferrer"></a> -->
+		      	</div>
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+      </div> 
+ 
+ </div>
+ 
+</body>
+</html>
